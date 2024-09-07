@@ -1,0 +1,23 @@
+.container {
+    @apply w-full h-20 flex justify-between items-center absolute shadow-xl;
+}
+
+.wrapper {
+    @apply flex justify-between p-6 md:block hidden;
+}
+
+.item {
+    @apply text-base bg-secondary border-secondary px-4 py-2 rounded-md !text-tertiary;
+}
+
+.item:hover {
+    @apply bg-accent border-accent;
+}
+
+.mobile-wrapper {
+    @apply md:hidden block;
+}
+
+.sidebar-icon {
+    @apply m-3 cursor-pointer;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+    @apply w-[70%] md:w-1/2 h-screen bg-secondary sticky float-right flex flex-col p-5;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.sidebar-icon {
+    @apply float-right m-5 cursor-pointer text-primary;
+}
+
+.item {
+    @apply text-base !text-primary;
+}
