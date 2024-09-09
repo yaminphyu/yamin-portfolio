@@ -1,7 +1,8 @@
-import React from 'react'
-import { Box, Button, Text } from '@chakra-ui/react'
-import Image from 'next/image'
-import styles from '@/styles/HeroSection.module.css'
+import React from 'react';
+import { Box, Button, Text } from '@chakra-ui/react';
+import Image from 'next/image';
+import { FaArrowDownLong } from "react-icons/fa6";
+import styles from '@/styles/HeroSection.module.css';
 
 export default function HeroSection() {
     return (
@@ -14,7 +15,7 @@ export default function HeroSection() {
                     <h1 className={styles['paragraph']}>I am a full-stack developer who loves delivering quality work. I use Laravel for backend development and ReactJS and Next.js for frontend. I enjoy learning new things and solving bugs.</h1>
                     <Box>
                         <Button 
-                            className='!bg-accent !text-primary'
+                            className={styles['contact-me-btn']}
                             onClick={() => alert('Contact me!')}
                         >Contact me!</Button>
                     </Box>
@@ -22,6 +23,9 @@ export default function HeroSection() {
                 <Box className={styles['right-section']}>
                     <Image src='/hero1.png' alt='hero' width={300} height={300} />
                 </Box>
+            </Box>
+            <Box className={styles['down-arrow-container']}>
+                <FaArrowDownLong className={`animate-bounce ${styles['down-arrow']}`} />
             </Box>
         </Box>
     )

@@ -1,5 +1,5 @@
 .wrapper {
-    @apply w-full h-screen flex justify-between md:justify-around lg:items-center;
+    @apply w-full h-screen flex flex-col justify-around md:justify-evenly md:items-center;
 }
 
 .container {
@@ -28,4 +28,16 @@
 
 .paragraph {
     @apply text-lg my-5;
+}
+
+.down-arrow-container {
+    @apply flex flex-row justify-center items-center gap-5;
+}
+
+.down-arrow {
+    @apply text-accent text-3xl cursor-pointer;
+}
+
+.contact-me-btn {
+    @apply !bg-accent !text-primary;
 }
