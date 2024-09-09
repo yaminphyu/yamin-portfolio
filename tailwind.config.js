@@ -25,6 +25,12 @@ module.exports = {
     boxShadow: {
       'xl': 'rgba(191, 209, 250, 0.6) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px',
     },
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '1100px',
+      xl: '1440px',
+    },
   },
   plugins: [],
 };
