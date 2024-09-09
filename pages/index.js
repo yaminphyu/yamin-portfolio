@@ -8,6 +8,7 @@ import { useContext, useEffect } from "react";
 import { MobileSidebarContext } from "@/context/MobileSidebarContext";
 import useWindowDimension from "@/hooks/useWindowDimension";
 import HeroSection from "@/components/HeroSection";
+import AboutMe from "@/components/AboutMe";
 
 const arOneSans = AR_One_Sans({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function Home() {
       <NavBar />
       { toggle && <MobileSidebar /> }
       <HeroSection />
+      <AboutMe />
     </Container>
   );
 }

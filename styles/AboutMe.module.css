@@ -1,0 +1,27 @@
+.wrapper {
+    @apply w-full h-screen flex flex-row justify-center items-center;
+}
+
+.container {
+    @apply w-full lg:w-[65%] md:w-[80%] flex md:flex-row flex-col justify-end md:justify-around items-center;
+}
+
+.left-section {
+    @apply w-3/4 flex flex-row justify-center items-center;
+}
+
+.right-section {
+    @apply w-3/4 flex flex-col lg:gap-32 md:gap-16 gap-6;
+}
+
+.title {
+    @apply md:text-2xl text-xl font-semibold;
+}
+
+.content {
+    @apply md:text-lg text-base leading-7 md:my-3 my-1;
+}
+
+.uni-name {
+    @apply text-base leading-7;
+}
