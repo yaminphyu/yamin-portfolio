@@ -1,5 +1,5 @@
 .container {
-    @apply w-full h-20 flex justify-between md:justify-around items-center absolute shadow-xl;
+    @apply w-full h-20 flex justify-between md:justify-around items-center shadow-xl fixed;
 }
 
 .wrapper {
@@ -20,4 +20,16 @@
 
 .sidebar-icon {
     @apply m-3 cursor-pointer;
+}
+
+.scrolled {
+    @apply bg-navBg z-20;
+}
+
+.scrolled-btn {
+    @apply !bg-transparent !border-transparent !text-navBtn;
+}
+
+.scrolled-btn:hover {
+    @apply !text-miniText;
 }

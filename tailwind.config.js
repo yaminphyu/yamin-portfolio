@@ -20,6 +20,8 @@ module.exports = {
         tertiary: '#EEE7F6',
         accent: '#3D52A1',
         miniText: '#1A202C',
+        navBg: '#8594e4',
+        navBtn: '#424478',
       },
     },
     boxShadow: {
