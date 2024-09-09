@@ -3,7 +3,7 @@
 }
 
 .container {
-    @apply w-full lg:w-[65%] md:w-[80%] md:mt-20 mt-[100px] flex md:flex-row flex-col-reverse justify-end md:justify-around items-center;
+    @apply w-full lg:w-[65%] md:w-[80%] md:mt-28 mt-[100px] flex md:flex-row flex-col-reverse justify-end md:justify-around items-center;
 }
 
 .left-section {

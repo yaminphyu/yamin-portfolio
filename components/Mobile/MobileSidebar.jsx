@@ -4,9 +4,15 @@ import { AiOutlineClose } from "react-icons/ai";
 import styles from '@/styles/MobileSidebar.module.css';
 import { MobileSidebarContext } from '@/context/MobileSidebarContext';
 import { Link } from '@chakra-ui/next-js';
+import { enableBodyScroll } from 'body-scroll-lock';
 
 export default function MobileSidebar() {
     const { toggle, setToggle } = useContext(MobileSidebarContext)
+
+    const handleChangeSidebar = () => {
+        setToggle(!toggle);
+        enableBodyScroll(document.body);
+    }
     
     return (
         <Box className={styles.wrapper}>
@@ -14,7 +20,7 @@ export default function MobileSidebar() {
                 <AiOutlineClose 
                     className={styles['sidebar-icon']} 
                     size={20}
-                    onClick={() => setToggle(!toggle)}
+                    onClick={handleChangeSidebar}
                 />
             </Box>
             <Box className='w-3/4 px-6'>
