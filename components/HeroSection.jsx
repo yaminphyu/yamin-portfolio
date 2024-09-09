@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Button, Text } from '@chakra-ui/react';
 import Image from 'next/image';
-import { FaArrowDownLong } from "react-icons/fa6";
 import styles from '@/styles/HeroSection.module.css';
+import ScrollAnimation from './ScrollAnimation';
 
 export default function HeroSection() {
     return (
@@ -24,9 +24,7 @@ export default function HeroSection() {
                     <Image src='/hero1.png' alt='hero' width={300} height={300} />
                 </Box>
             </Box>
-            <Box className={styles['down-arrow-container']}>
-                <FaArrowDownLong className={`animate-bounce ${styles['down-arrow']}`} />
-            </Box>
+            <ScrollAnimation />
         </Box>
     )
 }
