@@ -6,7 +6,8 @@ import NavBar from "@/components/NavBar";
 import MobileSidebar from "@/components/Mobile/MobileSidebar";
 import { useContext, useEffect } from "react";
 import { MobileSidebarContext } from "@/context/MobileSidebarContext";
-import useWindowDimension from "@/utils/useWindowDimension";
+import useWindowDimension from "@/hooks/useWindowDimension";
+import HeroSection from "@/components/HeroSection";
 
 const arOneSans = AR_One_Sans({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function Home() {
       </Head>
       <NavBar />
       { toggle && <MobileSidebar /> }
+      <HeroSection />
     </Container>
   );
 }

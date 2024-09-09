@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from '@chakra-ui/next-js';
 import { Box, HStack, List, ListItem } from '@chakra-ui/react';
 import { AiOutlineHeart, AiOutlineMenu } from "react-icons/ai";
@@ -15,9 +15,9 @@ export default function NavBar() {
     return (
         <Box className={styles.container}>
             <Box className="flex justify-between p-6">
-                <AiOutlineHeart size={20} className='m-1' />
+                <AiOutlineHeart size={20} className='m-[2px]' />
                 <Link href='/'>YaminPhyu</Link>
-                <AiOutlineHeart size={20} className='m-1' />
+                <AiOutlineHeart size={20} className='m-[2px]' />
             </Box>
             <Box className={styles.wrapper}>
                 <List 
