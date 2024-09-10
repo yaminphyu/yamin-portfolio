@@ -1,0 +1,7 @@
+.item {
+    @apply block w-full text-center py-5 text-[14px] font-medium uppercase;
+}
+
+.item-active {
+    @apply text-white bg-btnFocus;
+}

@@ -22,6 +22,7 @@ module.exports = {
         miniText: '#1A202C',
         navBg: '#8594e4',
         navBtn: '#424478',
+        btnFocus: '#0f117a',
       },
     },
     boxShadow: {
