@@ -9,6 +9,7 @@ import useWindowDimension from "@/hooks/useWindowDimension";
 import HeroSection from "@/components/HeroSection";
 import AboutMe from "@/components/AboutMe";
 import MobileStickyNav from "@/components/Mobile/MobileStickyNav";
+import Contact from "@/components/Contact";
 
 const arOneSans = AR_One_Sans({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function Home() {
       <NavBar />
       <HeroSection />
       <AboutMe />
+      <Contact />
       { toggle && <MobileStickyNav /> }
     </Container>
   );
