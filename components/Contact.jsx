@@ -23,6 +23,9 @@ export default function Contact() {
                     <label className={styles.label}>Message</label>
                     <textarea type='text' placeholder='Message me here...' className={styles.input} rows={7} />
                 </Box>
+                <Box className='w-3/4'>
+                    <button className={styles.button}>Send</button>
+                </Box>
             </Box>
         </Box>
     )

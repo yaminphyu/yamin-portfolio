@@ -1,9 +1,9 @@
 .wrapper {
-    @apply w-full h-screen flex flex-row justify-center items-center;
+    @apply w-full md:h-screen flex flex-row justify-center items-center;
 }
 
 .container {
-    @apply w-full lg:w-[65%] md:w-[80%] flex md:flex-row flex-col justify-end md:justify-around items-center sm:mt-0 mt-[200px] sm:mb-0 mb-[130px];
+    @apply w-full lg:w-[65%] md:w-[80%] flex md:flex-row flex-col justify-end md:justify-around items-center md:mt-0 mt-[100px] sm:mb-0 mb-[130px];
 }
 
 .left-section {

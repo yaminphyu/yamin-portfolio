@@ -30,10 +30,12 @@ export default function Home() {
         <title>{process.env.PROJECT_NAME}</title>
         <link rel="icon" href="/logo.jpg" />
       </Head>
-      <NavBar />
-      <HeroSection />
-      <AboutMe />
-      <Contact />
+      <main className="md:pb-24 pb-48">
+        <NavBar />
+        <HeroSection />
+        <AboutMe />
+        <Contact />
+      </main>
       { toggle && <MobileStickyNav /> }
     </Container>
   );
