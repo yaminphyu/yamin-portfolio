@@ -1,28 +1,11 @@
-import React, { useContext } from 'react'
-import { Box, List, ListItem } from '@chakra-ui/react'
-import { AiOutlineClose } from "react-icons/ai";
+import React from 'react'
+import { Box, List, ListItem } from '@chakra-ui/react';
 import styles from '@/styles/MobileSidebar.module.css';
-import { MobileSidebarContext } from '@/context/MobileSidebarContext';
 import { Link } from '@chakra-ui/next-js';
-import { enableBodyScroll } from 'body-scroll-lock';
 
 export default function MobileSidebar() {
-    const { toggle, setToggle } = useContext(MobileSidebarContext)
-
-    const handleChangeSidebar = () => {
-        setToggle(!toggle);
-        enableBodyScroll(document.body);
-    }
-    
     return (
         <Box className={styles.wrapper}>
-            <Box>
-                <AiOutlineClose 
-                    className={styles['sidebar-icon']} 
-                    size={20}
-                    onClick={handleChangeSidebar}
-                />
-            </Box>
             <Box className='w-3/4 px-6'>
                 <List 
                     justifyContent="start" 

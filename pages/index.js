@@ -3,12 +3,12 @@ import Head from "next/head";
 import { Container } from "@chakra-ui/react";
 import { AR_One_Sans } from "next/font/google";
 import NavBar from "@/components/NavBar";
-import MobileSidebar from "@/components/Mobile/MobileSidebar";
 import { useContext, useEffect } from "react";
 import { MobileSidebarContext } from "@/context/MobileSidebarContext";
 import useWindowDimension from "@/hooks/useWindowDimension";
 import HeroSection from "@/components/HeroSection";
 import AboutMe from "@/components/AboutMe";
+import MobileStickyNav from "@/components/Mobile/MobileStickyNav";
 
 const arOneSans = AR_One_Sans({
   subsets: ["latin"],
@@ -20,9 +20,7 @@ export default function Home() {
   const { width } = useWindowDimension();
 
   useEffect(() => {
-    if (width > 768) {
-      setToggle(false);
-    }
+    width > 768 ? setToggle(false) : setToggle(true);
   }, [width]);
   
   return (
@@ -32,9 +30,9 @@ export default function Home() {
         <link rel="icon" href="/logo.jpg" />
       </Head>
       <NavBar />
-      { toggle && <MobileSidebar /> }
       <HeroSection />
       <AboutMe />
+      { toggle && <MobileStickyNav /> }
     </Container>
   );
 }
