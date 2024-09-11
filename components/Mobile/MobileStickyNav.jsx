@@ -38,7 +38,7 @@ export default function MobileStickyNav() {
                                 className='w-1/4'
                             >
                                 <ScrollLink 
-                                    activeClass="active" 
+                                    activeClass={styles['item-active']}
                                     smooth 
                                     spy 
                                     to={item.url}

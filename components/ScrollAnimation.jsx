@@ -2,11 +2,16 @@ import React from 'react';
 import { Box } from '@chakra-ui/react';
 import { FaArrowDownLong } from "react-icons/fa6";
 import styles from '@/styles/HeroSection.module.css';
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 
 export default function ScrollAnimation() {
     return (
-        <Link href="#about">
+        <Link
+            to='about'
+            smooth={true}
+            duration={500}
+            offset={-70}
+        >
             <Box 
                 className={styles['down-arrow-container']}
             >

@@ -30,6 +30,7 @@ export default function NavBar() {
                     duration={500}
                     offset={-70}
                     onClick={() => setActiveTabIndex('')}
+                    className='cursor-pointer'
                 >YaminPhyu</Link>
                 <AiOutlineHeart size={20} className='m-[2px]' />
             </Box>
@@ -43,8 +44,7 @@ export default function NavBar() {
                         {
                             NavBars.map((item, index) => (
                                 <ListItem key={index}>
-                                    <Link 
-                                        activeClass="active" 
+                                    <Link
                                         smooth 
                                         spy 
                                         to={item.url}
