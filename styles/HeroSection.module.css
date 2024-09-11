@@ -1,0 +1,43 @@
+.wrapper {
+    @apply w-full md:h-screen flex flex-col justify-around md:justify-evenly md:items-center;
+}
+
+.container {
+    @apply w-full lg:w-[65%] md:w-[80%] md:mt-28 mt-[100px] flex md:flex-row flex-col-reverse justify-end md:justify-around items-center;
+}
+
+.left-section {
+    @apply w-full h-auto flex flex-col md:p-3 py-10 px-7 sm:max-w-[80%] sm:items-start;
+}
+
+.right-section {
+    @apply w-full h-auto flex justify-center md:p-10 md:!pb-32 sm:pb-0;
+}
+
+.first-text {
+    @apply md:text-xl text-lg text-accent font-semibold;
+}
+
+.second-text {
+    @apply md:text-5xl text-3xl text-miniText font-semibold;
+}
+
+.third-text {
+    @apply !text-accent mt-5 font-semibold md:text-3xl text-2xl;
+}
+
+.paragraph {
+    @apply text-lg my-5;
+}
+
+.down-arrow-container {
+    @apply flex flex-row justify-center items-center gap-5;
+}
+
+.down-arrow {
+    @apply text-accent text-3xl cursor-pointer animate-bounce;
+}
+
+.contact-me-btn {
+    @apply !bg-accent !text-primary;
+}
