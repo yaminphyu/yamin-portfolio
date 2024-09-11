@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply !bg-background-primary;
+  @apply !bg-background-primary scroll-smooth overflow-y-scroll;
 }
 
 a:hover {

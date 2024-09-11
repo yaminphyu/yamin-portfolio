@@ -44,10 +44,10 @@ export default function AboutMe() {
                             <motion.p 
                                 variants={itemVariants}
                                 className={styles.content}
-                            >I have over 4 years of experience in web design and development, specializing in PHP with the Laravel framework, ReactJS, and NextJS. I have proficiency in React Native as well. As a quick learner, I easily adapt from one technology to another. My passion for coding and problem-solving is the driving force behind my career choice. I enjoy collaborating with teams and envision becoming a Full-Stack Developer with comprehensive expertise. I particularly relish the challenge of debugging and resolving errors.</motion.p>
+                            >I have over 4 years of experience in web design and development, specializing in PHP with the Laravel framework, ReactJS, and NextJS. As a quick learner, I easily adapt from one technology to another. My passion for coding and problem-solving is the driving force behind my career choice. I enjoy collaborating with teams and envision becoming a Full-Stack Developer with comprehensive expertise. I particularly relish the challenge of debugging and resolving errors.</motion.p>
                         </motion.article>
                     </Box>
-                    <Box className='mt-5'>
+                    <Box className='md:mt-5'>
                         <motion.article
                             initial="hidden"
                             animate="visible"

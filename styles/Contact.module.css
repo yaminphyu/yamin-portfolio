@@ -1,0 +1,19 @@
+.wrapper {
+    @apply w-full h-screen flex flex-row justify-center md:items-center items-start;
+}
+
+.container {
+    @apply w-full lg:w-[50%] md:w-[70%] flex flex-col items-center md:border-2 md:shadow-xl md:rounded-lg md:px-20 md:py-8 sm:m-0 sm:mt-[150px] mt-[100px];
+}
+
+.label {
+    @apply text-lg font-semibold;
+}
+
+.input {
+    @apply w-full my-2 p-2 border-2 border-secondary rounded-md;
+}
+
+.button {
+    @apply w-full my-2 p-2 border-2 border-secondary bg-secondary hover:border-accent hover:bg-accent hover:text-white rounded-md;
+}

@@ -9,6 +9,7 @@ import useWindowDimension from "@/hooks/useWindowDimension";
 import HeroSection from "@/components/HeroSection";
 import AboutMe from "@/components/AboutMe";
 import MobileStickyNav from "@/components/Mobile/MobileStickyNav";
+import Contact from "@/components/Contact";
 
 const arOneSans = AR_One_Sans({
   subsets: ["latin"],
@@ -29,9 +30,12 @@ export default function Home() {
         <title>{process.env.PROJECT_NAME}</title>
         <link rel="icon" href="/logo.jpg" />
       </Head>
-      <NavBar />
-      <HeroSection />
-      <AboutMe />
+      <main className="md:pb-24 pb-48">
+        <NavBar />
+        <HeroSection />
+        <AboutMe />
+        <Contact />
+      </main>
       { toggle && <MobileStickyNav /> }
     </Container>
   );

@@ -5,8 +5,10 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from '@/styles/HeroSection.module.css';
 import ScrollAnimation from './ScrollAnimation';
+import useWindowDimension from '@/hooks/useWindowDimension';
 
 export default function HeroSection() {
+    const { width } = useWindowDimension();
     const MotionImage = motion.create(motion(Image));
     const MotionText = motion.create(motion(Text));
     const MotionButton = motion.create(motion(Button));
@@ -19,7 +21,7 @@ export default function HeroSection() {
     };
 
     return (
-        <Box className={styles.wrapper}>
+        <section className={`${styles.wrapper} ${width < 378 ? 'mb-48' : ''}`}>
             <Box className={styles.container}>
                 <Box className={styles['left-section']}>
                     <motion.article
@@ -76,6 +78,6 @@ export default function HeroSection() {
                 </Box>
             </Box>
             <ScrollAnimation />
-        </Box>
+        </section>
     )
 }

@@ -24,10 +24,10 @@ export default function MobileStickyNav() {
     }
     
     return (
-        <Box className='sticky bottom-0'>
+        <Box className='fixed bottom-0 left-0 right-0'>
             <Box className='bg-navBg rounded-t-md'>
                 <ul
-                    className="mb-5 flex list-none flex-row flex-wrap border-b-0 ps-0"
+                    className="flex list-none flex-row flex-wrap border-b-0 ps-0"
                 >
                     {
                         NavBars.map((item, index) => (
