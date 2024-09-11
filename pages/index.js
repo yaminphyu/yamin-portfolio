@@ -11,6 +11,7 @@ import AboutMe from "@/components/AboutMe";
 import MobileStickyNav from "@/components/Mobile/MobileStickyNav";
 import Contact from "@/components/Contact";
 import Experiences from "@/components/Experiences";
+import Projects from "@/components/Projects";
 
 const arOneSans = AR_One_Sans({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function Home() {
         <NavBar />
         <HeroSection />
         <AboutMe />
+        <Projects />
         <Experiences />
         <Contact />
       </main>

@@ -21,7 +21,7 @@ export default function HeroSection() {
     };
 
     return (
-        <section className={styles.wrapper}>
+        <section className={styles.wrapper} id='top'>
             <Box className={styles.container}>
                 <Box className={styles['left-section']}>
                     <motion.article

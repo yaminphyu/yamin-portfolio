@@ -1,0 +1,31 @@
+.wrapper {
+    @apply w-full flex justify-center;
+}
+
+.container {
+    @apply lg:w-[65%] md:w-[70%] w-full flex flex-col items-center py-10 md:mt-[80px] mt-[60px];
+}
+
+.label {
+    @apply md:text-2xl text-lg font-semibold;
+}
+
+.project {
+    @apply w-full lg:flex flex-wrap justify-center pt-6 pb-10;
+}
+
+.item {
+    @apply lg:w-[40%] p-10 m-5 shadow-xl;
+}
+
+.name {
+    @apply md:text-lg text-lg font-semibold md:my-2 my-1 text-accent;
+}
+
+.technology {
+    @apply md:text-[14px] text-xs leading-6;
+}
+
+.link {
+    @apply !underline;
+}
