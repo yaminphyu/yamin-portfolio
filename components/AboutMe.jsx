@@ -24,7 +24,7 @@ export default function AboutMe() {
     };
 
     return (
-        <Box className={styles.wrapper} id='about'>
+        <section className={styles.wrapper} id='about'>
             <Box className={styles.container}>
                 <Box className={styles['left-section']}>
                     <Lottie options={defaultOptions} height={300} width={300} />
@@ -70,6 +70,6 @@ export default function AboutMe() {
                     </Box>
                 </Box>
             </Box>
-        </Box>
+        </section>
     )
 }

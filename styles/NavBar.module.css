@@ -1,5 +1,5 @@
 .container {
-    @apply w-full h-20 flex justify-between md:justify-around items-center shadow-xl fixed;
+    @apply w-full md:h-20 h-16 flex justify-between md:justify-around items-center shadow-xl fixed;
 }
 
 .wrapper {
@@ -7,7 +7,7 @@
 }
 
 .item {
-    @apply text-base bg-secondary border-secondary px-4 py-2 rounded-md !text-tertiary;
+    @apply text-base bg-navBg border-navBg px-4 py-2 rounded-md !text-white;
 }
 
 .item:hover {
@@ -27,7 +27,7 @@
 }
 
 .scrolled-btn {
-    @apply !bg-transparent !border-transparent !text-navBtn;
+    @apply !bg-transparent !border-transparent !text-miniText;
 }
 
 .scrolled-btn:hover {

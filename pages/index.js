@@ -10,6 +10,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutMe from "@/components/AboutMe";
 import MobileStickyNav from "@/components/Mobile/MobileStickyNav";
 import Contact from "@/components/Contact";
+import Experiences from "@/components/Experiences";
 
 const arOneSans = AR_One_Sans({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function Home() {
         <NavBar />
         <HeroSection />
         <AboutMe />
+        <Experiences />
         <Contact />
       </main>
       { toggle && <MobileStickyNav /> }

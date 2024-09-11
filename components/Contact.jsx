@@ -35,7 +35,7 @@ export default function Contact() {
         // }
     }
     return (
-        <Box className={styles.wrapper} id='contact'>
+        <section className={styles.wrapper} id='contact'>
             <Box className={styles.container}>
                 <h1 className='text-xl my-5'>Contact</h1>
                 <form className='w-full flex flex-col items-center' onSubmit={handleSubmit}>
@@ -96,6 +96,6 @@ export default function Contact() {
                     </Box>
                 </form>
             </Box>
-        </Box>
+        </section>
     )
 }
