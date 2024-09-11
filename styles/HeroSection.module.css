@@ -1,5 +1,5 @@
 .wrapper {
-    @apply w-full h-screen flex flex-col justify-around md:justify-evenly md:items-center;
+    @apply w-full md:h-screen flex flex-col justify-around md:justify-evenly md:items-center;
 }
 
 .container {

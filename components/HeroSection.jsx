@@ -21,7 +21,7 @@ export default function HeroSection() {
     };
 
     return (
-        <section className={`${styles.wrapper} ${width < 378 ? 'mb-48' : ''}`}>
+        <section className={styles.wrapper}>
             <Box className={styles.container}>
                 <Box className={styles['left-section']}>
                     <motion.article

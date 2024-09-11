@@ -1,5 +1,5 @@
 .wrapper {
-    @apply w-full h-screen flex flex-row justify-center md:items-center items-start;
+    @apply w-full flex flex-row justify-center md:items-center items-start;
 }
 
 .container {
@@ -7,7 +7,7 @@
 }
 
 .label {
-    @apply text-lg font-semibold;
+    @apply md:text-2xl text-lg font-semibold;
 }
 
 .input {
