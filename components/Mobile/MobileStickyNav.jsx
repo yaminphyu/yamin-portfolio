@@ -3,6 +3,7 @@ import { Box } from '@chakra-ui/react'
 import styles from '@/styles/MobileStickyNav.module.css'
 import { MobileStickyNavbarContext } from '@/context/MobileStickyNavbar';
 import { NavBars } from '@/config';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function MobileStickyNav() {
     const { activeTabIndex, setActiveTabIndex } = useContext(MobileStickyNavbarContext);
@@ -36,11 +37,14 @@ export default function MobileStickyNav() {
                                 key={index}
                                 className='w-1/4'
                             >
-                                <a
-                                    href={item.url}
+                                <ScrollLink 
+                                    activeClass="active" 
+                                    smooth 
+                                    spy 
+                                    to={item.url}
                                     className={`${styles.item} ${activeTabIndex === item.id ? styles['item-active'] : ''}`}
                                     onClick={() => handleChangeNavbar(item.id, item.url)}
-                                >{item.name}</a>
+                                >{item.name}</ScrollLink>
                             </li>
                         ))
                     }
