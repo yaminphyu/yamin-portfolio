@@ -1,0 +1,33 @@
+.wrapper {
+    @apply w-full flex justify-center;
+}
+
+.container {
+    @apply lg:w-[65%] md:w-[70%] w-full flex flex-col items-center py-10 md:mt-[80px] mt-[60px];
+}
+
+.label {
+    @apply md:text-2xl text-lg font-semibold;
+}
+
+.experience {
+    @apply w-full flex flex-wrap justify-center pt-6 pb-10;
+}
+
+.item {
+    @apply lg:w-[40%] p-10 m-5 shadow-xl;
+}
+
+.company,
+.position {
+    @apply md:text-lg text-lg font-semibold;
+}
+
+.location,
+.exp {
+    @apply md:text-[14px] text-xs leading-6;
+}
+
+.position {
+    @apply md:my-2 my-1 text-accent;
+}

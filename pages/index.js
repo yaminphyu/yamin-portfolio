@@ -3,16 +3,27 @@ import Head from "next/head";
 import { Container } from "@chakra-ui/react";
 import { AR_One_Sans } from "next/font/google";
 import NavBar from "@/components/NavBar";
-import MobileSidebar from "@/components/Mobile/MobileSidebar";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { MobileSidebarContext } from "@/context/MobileSidebarContext";
+import useWindowDimension from "@/hooks/useWindowDimension";
+import HeroSection from "@/components/HeroSection";
+import AboutMe from "@/components/AboutMe";
+import MobileStickyNav from "@/components/Mobile/MobileStickyNav";
+import Contact from "@/components/Contact";
+import Experiences from "@/components/Experiences";
 
 const arOneSans = AR_One_Sans({
   subsets: ["latin"],
 });
 
 export default function Home() {
-  const { toggle } = useContext(MobileSidebarContext);
+  const { toggle, setToggle } = useContext(MobileSidebarContext);
+
+  const { width } = useWindowDimension();
+
+  useEffect(() => {
+    width > 768 ? setToggle(false) : setToggle(true);
+  }, [width]);
   
   return (
     <Container maxW='container.full' className={`${arOneSans.className} w-full h-screen !p-0`}>
@@ -20,8 +31,14 @@ export default function Home() {
         <title>{process.env.PROJECT_NAME}</title>
         <link rel="icon" href="/logo.jpg" />
       </Head>
-      <NavBar />
-      { toggle && <MobileSidebar /> }
+      <main className="md:pb-24 pb-48">
+        <NavBar />
+        <HeroSection />
+        <AboutMe />
+        <Experiences />
+        <Contact />
+      </main>
+      { toggle && <MobileStickyNav /> }
     </Container>
   );
 }
