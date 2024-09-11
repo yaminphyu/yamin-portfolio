@@ -1,5 +1,5 @@
 .item {
-    @apply block w-full text-center py-5 text-[14px] font-medium uppercase;
+    @apply block w-full text-center py-5 md:text-[14px] text-[13px] font-medium uppercase;
 }
 
 .item-active {
