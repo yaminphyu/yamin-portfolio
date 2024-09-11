@@ -3,7 +3,7 @@
 }
 
 .container {
-    @apply w-full lg:w-[50%] md:w-[70%] flex flex-col items-center md:border-2 md:shadow-xl md:rounded-lg md:p-20 sm:m-0 sm:mt-[150px] mt-[100px];
+    @apply w-full lg:w-[50%] md:w-[70%] flex flex-col items-center md:border-2 md:shadow-xl md:rounded-lg md:px-20 md:py-8 sm:m-0 sm:mt-[150px] mt-[100px];
 }
 
 .label {
