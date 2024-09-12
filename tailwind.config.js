@@ -23,6 +23,9 @@ module.exports = {
         navBg: '#8594e4',
         navBtn: '#424478',
         btnFocus: '#0f117a',
+        blueBg: {
+          500: '#3860ca',
+        }
       },
     },
     boxShadow: {

@@ -10,7 +10,7 @@ export default function ScrollAnimation() {
             to='about'
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={20}
         >
             <Box 
                 className={styles['down-arrow-container']}
