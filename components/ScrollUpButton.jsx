@@ -4,7 +4,7 @@ import { BsArrowUpCircle } from "react-icons/bs";
 
 export default function ScrollUpButton() {
   return (
-    <section className='fixed md:bottom-10 bottom-16 right-10'>
+    <section className='fixed md:bottom-10 bottom-16 right-5'>
         <Button 
             smooth={true} 
             duration={1000} 
@@ -12,7 +12,7 @@ export default function ScrollUpButton() {
             spy={true} 
             offset={-70}
         >
-            <BsArrowUpCircle className='text-accent md:text-[40px] text-4xl bg-white rounded-full' />
+            <BsArrowUpCircle className='text-accent hover:text-blueBg-500 md:text-[40px] text-4xl bg-white rounded-full' />
         </Button>
     </section>
   )

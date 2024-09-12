@@ -1,17 +1,15 @@
 /* eslint-disable react/display-name */
 import React from 'react';
-import { Box, Button, Text } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from '@/styles/HeroSection.module.css';
 import ScrollAnimation from './ScrollAnimation';
-import useWindowDimension from '@/hooks/useWindowDimension';
+import { Button } from 'react-scroll';
 
 export default function HeroSection() {
-    const { width } = useWindowDimension();
     const MotionImage = motion.create(motion(Image));
     const MotionText = motion.create(motion(Text));
-    const MotionButton = motion.create(motion(Button));
 
     const visible = { opacity: 1, y: 0, transition: { duration: 0.5 } };
 
@@ -54,15 +52,19 @@ export default function HeroSection() {
                         >
                             I am a full-stack developer who loves delivering quality work. I use Laravel for backend development and ReactJS and Next.js for frontend. I enjoy learning new things and solving bugs.
                         </motion.h1>
-                        <Box>
-                            <MotionButton 
+                        <Box className='flex flex-row items-center'>
+                            <Button 
+                                to='contact'
+                                spy={true}
+                                smooth={true}
+                                offset={10}
+                                duration={500}
                                 variants={{
                                     hidden: { opacity: 0, y: -20 },
                                     visible
                                 }}
                                 className={styles['contact-me-btn']}
-                                onClick={() => alert('Contact me!')}
-                            >Contact me!</MotionButton>
+                            >Contact me!</Button>
                         </Box>
                     </motion.article>
                 </Box>

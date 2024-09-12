@@ -39,5 +39,5 @@
 }
 
 .contact-me-btn {
-    @apply !bg-accent !text-primary;
+    @apply !bg-accent !text-primary py-2 px-3 rounded hover:!bg-blueBg-500;
 }

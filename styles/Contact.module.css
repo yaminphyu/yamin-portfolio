@@ -1,5 +1,5 @@
 .wrapper {
-    @apply w-full flex flex-row justify-center md:items-center items-start;
+    @apply w-full flex flex-col justify-center items-center;
 }
 
 .container {
