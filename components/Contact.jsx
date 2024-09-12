@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Box } from '@chakra-ui/react';
 import styles from '@/styles/Contact.module.css';
+import MyContacts from './MyContacts';
+import { MobileSidebarContext } from '@/context/MobileSidebarContext';
 
 export default function Contact() {
+    const { toggle } = useContext(MobileSidebarContext);
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -96,6 +100,7 @@ export default function Contact() {
                     </Box>
                 </form>
             </Box>
+            { toggle && <MyContacts /> }
         </section>
     )
 }
